@@ -1,9 +1,8 @@
-import os
+import sys
 
 def run(**args):
-  print("[*] vedendo il file")
-  file = os.uname()
-  return str(file)
+  print("[*] chiusura in corso")
+  sys.exit()
 
 run()
 
