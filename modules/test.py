@@ -5,3 +5,5 @@ def run(**args):
   test = os.listdir(".")
 
   return str(test)
+  
+run()
