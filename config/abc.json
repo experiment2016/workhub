@@ -1,8 +1,8 @@
 [
     {
-    "module" : "test"
+    "module" : "radicchio"
     },
     {
-    "module" : "test2"
+    "module" : "salsiccia"
     }
 ]
