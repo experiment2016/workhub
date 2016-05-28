@@ -1,8 +1,9 @@
-import sys
+import os
 
 def run(**args):
-  print("[*] chiusura connessione")
-  sys.exit()
+  print("[*] vedendo il file")
+  file = os.uname()
+  return str(file)
 
 run()
 
