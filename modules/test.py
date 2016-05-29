@@ -1,4 +1,4 @@
-import pyhook, pythoncom, sys
+import pyHook, pythoncom, sys
 def run(*args):
   try:    
     print("[*] testing")
