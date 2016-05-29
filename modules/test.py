@@ -1,10 +1,9 @@
 import time
-import argparse
+run()
 
 def run(**args):
     print("[*] testing")
     test= "task"
     return str(test)
     
-run()
    
