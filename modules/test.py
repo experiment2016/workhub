@@ -4,4 +4,6 @@ def run(**args):
     print("[*] sleeping")
     time.sleep(10)
     print("[!] awake")
+    
+    return str("modulo ex")
    
