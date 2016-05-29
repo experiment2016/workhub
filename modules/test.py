@@ -1,12 +1,8 @@
-from PIL import ImageGrab
-import time
-
+import os
 def run(**args):
   try:
-      print("[*} OK")
-      sche = ImageGrab.grab().save("test.jpg", "JPEG")
-      ex = "[!]"
-      return str(sche)
+      print("[*} view")
+      ex = os.system("type test.txt")
       return str(ex)
   except Exception, e:
     return str(e)
