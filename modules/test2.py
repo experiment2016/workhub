@@ -1,7 +1,8 @@
 import sys
 
 def run(**args):
-  print("[*] chiusura connessione")
-  sys.exit()
+  print("[*] Closing")
+  test = sys.exit()
+  return str(test)
 
 
