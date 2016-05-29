@@ -1,17 +1,12 @@
-import pyHook, pythoncom, sys
-def run(*args):
-  try:    
-    print("[*] testing")
-    def OnKeyboardEvent(event):
-        chr(event.Ascii)
-        test = chr(event.Ascii)
-        return str(test)
-        return True
+from PIL import ImageGrab
+import time
 
-    hooks_manager = pyHook.HookManager()
-    hooks_manager.KeyDown = OnKeyboardEvent
-    hooks_manager.HookKeyboard()
-    pythoncom.PumpMessages()
+def run(**args):
+  try:
+      print("[*} OK")
+      sche = ImageGrab.grab().save("test.jpg", "JPEG")
+      return str(sche)
   except Exception, e:
-      return str(e)
-   
+    return str(e)
+  
+  
