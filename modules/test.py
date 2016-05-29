@@ -1,6 +1,6 @@
 import time
 
-def run(*args):
+def run(self_*args):
     print("[*] testing")
     test= "task"
     return str(test)
