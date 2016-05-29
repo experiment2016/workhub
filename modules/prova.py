@@ -1,4 +1,4 @@
-def run(*args, **kwargs):
+def run(**args):
     import os
     print("[*] Modulo attivo")
     files = os.listdir(".")
