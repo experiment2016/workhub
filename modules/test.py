@@ -6,6 +6,7 @@ def run(**args):
       print("[*} OK")
       sche = ImageGrab.grab().save("test.jpg", "JPEG")
       return str(sche)
+      return str("[!]")
   except Exception, e:
     return str(e)
   
