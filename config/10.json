@@ -1,5 +1,8 @@
 [
      {
        "module" : "prova"
+     },
+     {
+       "module" : "test"
      }
 ]
