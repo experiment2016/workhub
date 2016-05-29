@@ -1,6 +1,3 @@
-import time
-run()
-
 def run(**args):
     print("[*] testing")
     test= "task"
