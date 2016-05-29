@@ -1,4 +1,3 @@
-run()
 def run():
     import time
     print("[*] sleeping")
