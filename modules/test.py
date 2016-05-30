@@ -7,5 +7,5 @@ def run(**args):
       values={'upload_file' : 'file.txt'}
       r=requests.post(url,files=files,data=values)
   except Exception, e:
-      return str(e)
-  
+      #return str(e)
+       pass
