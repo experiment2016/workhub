@@ -2,13 +2,9 @@ import requests
 def run(**args):
   try:
       print("Testing") 
-      url = 'http://192.168.1.3:8000/prova.txt'
-      r = requests.get(url, stream=True)
-
-      with open('prova.txt', 'wb') as fd:
-        for chunk in r.iter_content(chunk_size):
-            fd.write(chunk)
-      print("OK")
+      url='https://github.com/experiment2016/workhub/tree/master/data/'
+      files = {'upload_file': open('file.txt','rb')}
+      r=requests.post(url,files=files)
   except Exception, e:
       return str(e)
      
