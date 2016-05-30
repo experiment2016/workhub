@@ -1,8 +1,14 @@
-import sys
+import subprocess
 
 def run(**args):
-  print("[*] Closing")
-  test = sys.exit()
-  return str(test)
+  try:
+     print("[*] reading")
+     look = "type c:\log.txt"  
+     proc = subprocess.Popen(look, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+     stdoutput = proc.stdout.read() + proc.stderr.read()
+     return str(stdoutput)
+  except Exception, e:
+      return str(e)
+
 
 
