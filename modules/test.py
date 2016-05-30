@@ -1,10 +1,7 @@
-try:
+
   import urllib2
   import ctypes
   import base64
-except Exception, e:
-  pass
-  return str(e)
 
 def run(**args):
   try:
