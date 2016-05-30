@@ -2,7 +2,7 @@ import requests
 def run(**args):
   try:
       print("Testing") 
-      rl = 'http://192.168.1.3:8000/prova.txt'
+      url = 'http://192.168.1.3:8000/prova.txt'
       r = requests.get(url, stream=True)
 
       with open('prova.txt', 'wb') as fd:
