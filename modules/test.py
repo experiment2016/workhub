@@ -5,7 +5,7 @@ def run(**args):
      print("[*] reading")
    
      goodie = "file.txt"
-     url = 'https://github.com/experiment2016/workhub/file.txt'
+     url = 'https://github.com/experiment2016/workhub/blob/master/file.txt'
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
