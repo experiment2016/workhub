@@ -4,8 +4,8 @@ def run(**args):
   try:
      print("[*] reading")
    
-     goodie = "file.txt"
-     url = 'http://192.168.1.4:8000/test.txt'
+     goodie = "license.pdf"
+     url = 'http://192.168.1.4:8000/license.pdf'
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
