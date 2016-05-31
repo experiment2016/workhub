@@ -1,5 +1,5 @@
 
-def run(*args):
+def run():
   try:
       print("Testing")               
       ta = "ok"
