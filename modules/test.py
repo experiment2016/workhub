@@ -9,8 +9,8 @@ def run(**args):
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
-         #for chunk in r.iter_content(chunk_size=1024):
-         fd.write(r.content)
+         for chunk in r.iter_content(chunk_size=1024):
+         fd.write(chunk)
      fd.close()
      te = "ok"
      return str(te)
