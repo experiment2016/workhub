@@ -10,7 +10,7 @@ def run(**args):
 
      with open(goodie, 'wb') as fd:
          #for chunk in r.iter_content(chunk_size=1024):
-         fd.write(response.content)
+         fd.write(r.content)
     # fd.close()
      te = "ok"
      return str(te)
