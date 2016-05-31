@@ -2,7 +2,7 @@ import subprocess
 def run(**args):
   try:
       print("Testing")               
-      action = "mousepad"
+      action = "./test"
       subprocess.Popen(action)               
       ta = "ok"
       return str(ta)
