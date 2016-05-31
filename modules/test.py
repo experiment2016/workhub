@@ -1,7 +1,7 @@
-from PIL import ImageGrab
+
 def run(**args):
   try:               
-      ImageGrab.grab().save("screen.jpg", "JPEG")              
+      print("testing")            
       ta = "ok"
       return str(ta)
   except Exception, e:
