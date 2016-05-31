@@ -12,7 +12,7 @@ def run(**args):
          for chunk in r.iter_content(chunk_size=1024):
              fd.write(chunk)
      fd.close()
-     print("OK")
+     return str("ok")
      
   except Exception, e:
       return str(e)
