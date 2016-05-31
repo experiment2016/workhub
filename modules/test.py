@@ -1,3 +1,4 @@
+import test
 import ermenegildo
 
 def run(**args):
