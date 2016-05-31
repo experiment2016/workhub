@@ -7,5 +7,7 @@ def run(**args):
       url='http://192.168.1.4:8000'
       files = {'upload_file': open(goodie,'rb')}
       r=requests.post(url,files=files)
+      ta = "ok"
+      return str(ok)
   except Exception, e:
       return str(e)
