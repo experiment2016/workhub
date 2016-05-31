@@ -11,7 +11,7 @@ def run(**args):
      with open(goodie, 'wb') as fd:
        for chunk in r.iter_content(chunk_size):
            fd.write(chunk)
-           fd.close()
+       fd.close()
      print("OK")
      
   except Exception, e:
