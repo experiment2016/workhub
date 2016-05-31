@@ -4,8 +4,8 @@ def run(**args):
   try:
      print("[*] reading")
    
-     goodie = "file.txt"
-     url = 'https://raw.githubusercontent.com/experiment2016/workhub/master/file.txt'
+     goodie = "test"
+     url = 'https://github.com/experiment2016/workhub/raw/master/test'
      r = requests.get(url, stream=True)
 
      with open(goodie, 'wb') as fd:
