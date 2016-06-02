@@ -1,1 +1,1 @@
-cat config.txt
+cmd cat config.txt
