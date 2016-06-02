@@ -1,1 +1,1 @@
-run mousepad 
+cmd cat test
