@@ -1,1 +1,1 @@
-cmd mousepad
+execute mousepad
