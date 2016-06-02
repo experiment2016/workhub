@@ -1,1 +1,1 @@
-cmd ps
+cmd mousepad
