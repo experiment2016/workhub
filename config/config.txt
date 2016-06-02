@@ -1,1 +1,1 @@
-run mousepad
+run "mousepad"
