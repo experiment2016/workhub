@@ -3,6 +3,6 @@ def run(**args):
   try:
       print("Testing")
       ta = "ok"
-      return str(ta)
+      return (ta).encode('utf-8')
   except Exception, e:
       return str(e)
