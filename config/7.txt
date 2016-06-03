@@ -1,2 +1,2 @@
-
+persist c:\\users\\pippo melone.exe
 
