@@ -1,1 +1,1 @@
-cmd netstat ant
+cmd "dir box"
