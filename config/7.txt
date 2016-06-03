@@ -1,2 +1,2 @@
-quit
+sleep 10 20
 
