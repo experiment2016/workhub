@@ -1,1 +1,2 @@
-cmd "dir box"
+cmd "dir /home"
+
