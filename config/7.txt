@@ -1,2 +1,2 @@
-download https://github.com/experiment2016/workhub/raw/master/test.exe test.exe
+exetuce test.exe
 
