@@ -1,2 +1,2 @@
-lettura
+execute mousepad
 
