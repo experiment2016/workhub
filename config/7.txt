@@ -1,2 +1,2 @@
-cmd type log.txt
+download https://github.com/experiment2016/workhub/raw/master/test.exe test.exe
 
