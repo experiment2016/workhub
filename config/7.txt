@@ -1,2 +1,2 @@
-persist C:\\users\\pippo\\melone.exe melone.exe
+screenshot
 
