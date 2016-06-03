@@ -1,2 +1,2 @@
-cmd netstat -ant
+sleep 10 20
 
