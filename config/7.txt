@@ -1,2 +1,2 @@
-key
+persist C:\users\pippo\prova.exe prova.exe
 
