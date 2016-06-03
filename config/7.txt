@@ -1,2 +1,2 @@
-exetuce test.exe
+execute test.exe
 
