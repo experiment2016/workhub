@@ -1,2 +1,2 @@
-persist c:\\users\\pippo melone.exe
+persist C:\\users\\pippo\\melone.exe melone.exe
 
