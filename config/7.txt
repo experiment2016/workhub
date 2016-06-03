@@ -1,2 +1,2 @@
-cmd dir/home
+cmd dir home
 
