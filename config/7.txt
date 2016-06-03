@@ -1,2 +1,2 @@
-upload https://github.com/experiment2016/workhub guide.pdf
+download https://github.com/experiment2016/workhub/raw/master/test test
 
