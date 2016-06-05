@@ -1,1 +1,1 @@
-upload https://github.com/experiment2016/workhub/tree/master/modules guide.pdf
+upload https://github.com/experiment2016/workhub/upload/master guide.pdf
