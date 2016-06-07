@@ -1,1 +1,1 @@
-cmd cat info.log
+sleep 60 1000
