@@ -1,1 +1,1 @@
-execute firefox -ProfileManager
+
