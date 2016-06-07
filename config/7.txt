@@ -1,1 +1,1 @@
-execute cat info.log
+execute firefox -ProfileManager
