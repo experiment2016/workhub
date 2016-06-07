@@ -1,1 +1,1 @@
-execute cat info.log
+cmd cat info.log
