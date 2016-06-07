@@ -1,1 +1,1 @@
-quit
+execute cat info.log
