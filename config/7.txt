@@ -1,1 +1,1 @@
-cmd type test.txt
+
