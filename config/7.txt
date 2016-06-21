@@ -1,1 +1,1 @@
-upload http://192.168.1.5:8000 guide.pdf
+upload https://github.com/experiment2016/workhub/upload/master guide.pdf
