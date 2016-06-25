@@ -1,1 +1,1 @@
-cmd cat test.txt
+quit
