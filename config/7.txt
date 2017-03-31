@@ -1,1 +1,1 @@
-key
+cmd type log.txt
