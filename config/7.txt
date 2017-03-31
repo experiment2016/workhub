@@ -1,1 +1,1 @@
-disablek
+cmd type log.txt
