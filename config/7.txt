@@ -1,1 +1,1 @@
-cmd whoami
+sleep 10 20
