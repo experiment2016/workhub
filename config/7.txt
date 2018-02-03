@@ -1,1 +1,1 @@
-download https://raw.githubusercontent.com/experiment2016/workhub/master/README.md README.md
+upload https://filebin.ca/upload.php hello
